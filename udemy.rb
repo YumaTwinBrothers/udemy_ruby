@@ -160,7 +160,6 @@ class Student
     @@posts << @post
 
     puts "\n---------------------\n"
-
   end
 
   def showing_introduction
@@ -177,14 +176,12 @@ class Student
         input = gets.to_i - 1
 
         if @@posts[input] && input >= 0
-
           puts "First name: #{@@posts[input][:first_name]}"
           puts "Last name: #{@@posts[input][:last_name]}"
           puts "Email: #{@@posts[input][:email]}"
           puts "Username: #{@@posts[input][:username]}"
           puts "Password: #{@@posts[input][:password]}"
           puts line
-
           break
         else
           puts "Invalid number"
@@ -194,7 +191,6 @@ class Student
 end
 
 loop do
-
   data = Student.new
 
   number_of_introduction = Student.number_of_introduction
@@ -212,7 +208,6 @@ loop do
         else
           MyException.throw_exception
         end
-
     else
       puts "[1]:register your introduction"
       puts "[2]:show an introduction"
@@ -231,7 +226,6 @@ loop do
         else
           MyException.throw_exception
         end
-
     end
 end
 
