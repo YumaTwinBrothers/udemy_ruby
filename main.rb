@@ -11,11 +11,10 @@ users = [
         {username: "Boby", password: "password4"},
         {username: "Jessica", password: "password5"}
 ]
-include Crud
+
+include Crud # due to putting include module name here, you don't need 'self.method name' in the module
 hashed_users = Crud.create_secure_users(users)
 puts hashed_users
-
-
 
 
 
