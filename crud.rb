@@ -33,3 +33,5 @@ module Crud
     "Credentials were not correct"
   end
 end
+
+# モジュールはメソッドをただまとめた一つの設計図。それを継承してインスタンス（製品）を作っていく
